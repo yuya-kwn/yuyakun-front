@@ -1,20 +1,14 @@
-import React, { use, useState } from "react";
-import { GoSearch } from "react-icons/go";
+import { IoIosMenu } from "react-icons/io";
 
 export default function Header() {
-  const [isActiveSearch, setIsActiveSearch] = useState(false);
-
-  const onClickSearch = () => {
-    setIsActiveSearch(!isActiveSearch);
-  };
-
   return (
-    <div className="md:hidden w-full fixed top-0 h-14 shadow-md shadow-black/5">
-			<div className="flex h-full items-center justify-end">
-        <button onClick={onClickSearch}>
-          <GoSearch size={20} className='mr-4' />
-        </button>
-      </div>
+    <div className="flex items-center justify-between w-full h-[60px] md:h-[90px] bg-slate-800 text-4xl px-3 md:px-5 py-2">
+      <p className="w-full text-xl md:text-2xl font-bold">
+        yuyakun.io
+      </p>
+      <button className="md:hidden hover:rounded-full hover:bg-white/30 p-1 md:p-2">
+        <IoIosMenu className='text-2xl md:text-3xl'/>
+      </button>
     </div>
   );
 }

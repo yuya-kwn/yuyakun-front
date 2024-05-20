@@ -1,12 +1,12 @@
-import React from 'react'
-import Div100vh from 'react-div-100vh';
+import LikeButton from "@/components/button/LikeButton";
+import ProfileContent from "@/components/misc/profile/ProfileContent";
+import React from "react";
 
 export default function HomePage() {
-    return (
-        <Div100vh className='w-full overflow-y-scroll'>
-            <p className='h-full flex items-center justify-center'>
-            ここが私のアナザースカイ
-            </p>
-        </Div100vh>
-    );
+  return (
+    <div className="max-w-screen-lg mx-auto h-full">
+      <ProfileContent />
+      <LikeButton />
+    </div>
+  );
 }
