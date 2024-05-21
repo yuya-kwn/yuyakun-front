@@ -15,7 +15,10 @@ export default function ProfileContent() {
         />
         <div className="w-full p-2 text-black font-bold text-base md:text-xl rounded-md neumorphism-inside">
           <p>名前：ゆうやくん</p>
-          <p className="flex items-center">性別：<CgGenderMale className="text-blue-500" /></p>
+          <p className="flex items-center">
+            性別：
+            <CgGenderMale className="text-blue-500" />
+          </p>
           <p>生年月日：2003年04月13日</p>
           <p>MBTI：ENFJ</p>
         </div>
@@ -27,7 +30,7 @@ export default function ProfileContent() {
           <p>褒めると喜ぶ。甘いものが好き。</p>
           <p>バドミントンが大好き。</p>
         </div>
-        <div className="grid w-full md:w-1/2 text-lg md:text-xl text-black font-semibold rounded-md gap-3 p-5 neumorphism-outside">
+        <div className="grid w-full lg:w-1/2 text-lg md:text-xl text-black font-semibold rounded-md gap-3 p-5 neumorphism-outside">
           <div className="flex items-center w-full">
             <p className="w-[100px]">HP</p>
             <Parameter numOfFull={14} />
@@ -37,21 +40,21 @@ export default function ProfileContent() {
             <Parameter numOfFull={13} />
           </div>
           <div className="flex items-center w-full">
-						<p className="w-[100px]">ぼうぎょ</p>
-						<Parameter numOfFull={12}/>
+            <p className="w-[100px]">ぼうぎょ</p>
+            <Parameter numOfFull={12} />
           </div>
           <div className="flex items-center w-full">
-					<p className="w-[100px]">とくこう</p>
-						<Parameter numOfFull={9} />
+            <p className="w-[100px]">とくこう</p>
+            <Parameter numOfFull={9} />
           </div>
           <div className="flex items-center w-full">
-					<p className="w-[100px]">とくぼう</p>
-						<Parameter numOfFull={11} />
-					</div>
-					<div className="flex items-center w-full">
-					<p className="w-[100px]">すばやさ</p>
-						<Parameter numOfFull={15} />
-					</div>
+            <p className="w-[100px]">とくぼう</p>
+            <Parameter numOfFull={11} />
+          </div>
+          <div className="flex items-center w-full">
+            <p className="w-[100px]">すばやさ</p>
+            <Parameter numOfFull={15} />
+          </div>
         </div>
       </div>
     </div>
