@@ -6,6 +6,12 @@
   box-shadow: inset 3px 3px 3px #7f7f7f, inset -3px -3px 3px #ffffff;
 }
 
+.neumorphism-inside-slate {
+  background-color: rgb(30 41 59);
+  border: 1px solid #1e293b;
+  box-shadow: inset 3px 3px 3px #020009, inset -3px -3px 3px #908fa1;
+}
+
 .neumorphism-inside-parameter-full {
   box-shadow: inset 3px 3px 3px #7f7f7f, inset -3px -3px 3px #f9ec5b;
 }

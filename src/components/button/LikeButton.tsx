@@ -1,3 +1,4 @@
+"use client";
 import gsap from "gsap";
 import { useState } from "react";
 import { IoIosHeart } from "react-icons/io";
@@ -29,8 +30,7 @@ export default function LikeButton() {
       .to(target, { scale: 1, duration: 0.2 })
       .to(target, { scale: 0.9, duration: 0.15 })
       .to(target, { scale: 1, duration: 0.15 });
-  }
-
+  };
 
   const expandCircleAnim = (target: gsap.TweenTarget) => {
     gsap
@@ -53,7 +53,8 @@ export default function LikeButton() {
             transform: `rotate(${
               index * (360 / particles.length)
             }deg) translateX(0px)`,
-            background: index % 3 === 1 ? "#ffa3c3" : index % 3 === 2 ? "#fffba3" : "#a3c3ff",
+            background:
+              index % 3 === 1 ? "green" : index % 3 === 2 ? "red" : "blue",
             opacity: 0,
           },
         })
@@ -90,7 +91,8 @@ export default function LikeButton() {
             transform: `rotate(${
               index * (360 / subParticles.length)
             }deg) translateX(0px)`,
-            background: index % 3 === 1 ? "#a3c3ff" : index % 3 === 2 ? "#ffa3c3" : "#fffba3",
+            background:
+              index % 3 === 1 ? "red" : index % 3 === 2 ? "blue" : "green",
             opacity: 0,
           },
         })
@@ -121,31 +123,29 @@ export default function LikeButton() {
   };
 
   return (
-    <div>
-      <button
-        className={`flex items-center justify-center w-[30px] h-[60px] rounded-full ${
-          !isLiked ? "neumorphism-outside" : "neumorphism-inside"
-        }`}
-        onClick={handleLikeButtonClick}
-      >
-        <IoIosHeart
-          id="like"
-          className={`${isLiked ? "text-red-400" : "text-black"}`}
-        />
-        <span className="circle"></span>
-        <span className="particle"></span>
-        <span className="particle"></span>
-        <span className="particle"></span>
-        <span className="particle"></span>
-        <span className="particle"></span>
-        <span className="particle"></span>
-        <span className="sub-particle"></span>
-        <span className="sub-particle"></span>
-        <span className="sub-particle"></span>
-        <span className="sub-particle"></span>
-        <span className="sub-particle"></span>
-        <span className="sub-particle"></span>
-      </button>
-    </div>
+    <button
+      className={`flex items-center justify-center w-[30px] h-[60px] rounded-full ${
+        !isLiked ? "neumorphism-outside" : "neumorphism-inside"
+      }`}
+      onClick={handleLikeButtonClick}
+    >
+      <IoIosHeart
+        id="like"
+        className={`${isLiked ? "text-red-600" : "text-black"}`}
+      />
+      <span className="circle"></span>
+      <span className="particle"></span>
+      <span className="particle"></span>
+      <span className="particle"></span>
+      <span className="particle"></span>
+      <span className="particle"></span>
+      <span className="particle"></span>
+      <span className="sub-particle"></span>
+      <span className="sub-particle"></span>
+      <span className="sub-particle"></span>
+      <span className="sub-particle"></span>
+      <span className="sub-particle"></span>
+      <span className="sub-particle"></span>
+    </button>
   );
 }
