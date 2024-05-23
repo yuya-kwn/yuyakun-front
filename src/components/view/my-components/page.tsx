@@ -37,7 +37,7 @@ export default function MyComponents() {
         <p>私の可愛いコンポーネント達</p>
         <p>（今後、自学や遊びなどで増えていく予定）</p>
         <div className="border-b-2 border-slate-700" />
-        <div className="grid grid-cols-3 h-full gap-3 mt-3">
+        <div className="grid md:grid-cols-3 h-full gap-3 mt-3">
           <div className="flex items-center justify-center border border-black/30 p-10 rounded-md neumorphism-inside">
             <LikeButton />
           </div>
